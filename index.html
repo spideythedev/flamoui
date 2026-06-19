@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-fl-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlamoUI — Enterprise CSS Framework</title>
+    <link rel="icon" href="flamoui.png">
+    <link rel="stylesheet" href="dist/css/flamoui.css">
+    <style>
+        .demo-header {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .demo-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .demo-section {
+            margin: 60px 0;
+        }
+        .color-swatch {
+            width: 100%;
+            height: 60px;
+            border-radius: 8px;
+        }
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fl-navbar">
+        <a href="#" class="fl-navbar-brand">
+            <img src="flamoui.png" alt="FlamoUI">
+            FlamoUI
+        </a>
+        <ul class="fl-navbar-nav">
+            <li class="fl-navbar-item"><a href="#components" class="fl-navbar-link active">Components</a></li>
+            <li class="fl-navbar-item"><a href="#utilities" class="fl-navbar-link">Utilities</a></li>
+            <li class="fl-navbar-item"><a href="#themes" class="fl-navbar-link">Themes</a></li>
+            <li class="fl-navbar-item"><a href="#examples" class="fl-navbar-link">Examples</a></li>
+        </ul>
+        <div class="fl-navbar-actions">
+            <button class="fl-btn fl-btn-sm fl-btn-ghost" onclick="toggleTheme()">Toggle Theme</button>
+            <button class="fl-btn fl-btn-sm fl-btn-primary">Get Started</button>
+        </div>
+    </nav>
+
+    <main class="fl-container">
+        <div class="demo-header">
+            <img src="flamoui.png" alt="FlamoUI" class="demo-logo fl-animate-float">
+            <h1 class="fl-display-3 fl-text-gradient">FlamoUI</h1>
+            <p class="fl-lead" style="max-width:600px;margin:16px auto;">
+                Enterprise CSS Framework — Built for scale. Designed for power.
+                120+ components, 200+ utilities, zero dependencies.
+            </p>
+            <div class="fl-inline fl-justify-center" style="margin-top:24px;">
+                <button class="fl-btn fl-btn-primary fl-btn-lg">Get Started</button>
+                <button class="fl-btn fl-btn-outline fl-btn-lg">Documentation</button>
+            </div>
+            <div class="fl-inline fl-justify-center" style="margin-top:12px;">
+                <span class="fl-badge fl-badge-primary">v1.0</span>
+                <span class="fl-badge fl-badge-success">10K+ Lines</span>
+                <span class="fl-badge fl-badge-info">120+ Components</span>
+                <span class="fl-badge fl-badge-warning">Pure CSS</span>
+            </div>
+        </div>
+
+        <hr class="fl-divider">
+
+        <div class="demo-section" id="components">
+            <h2 class="fl-h2" style="text-align:center;margin-bottom:32px;">Core Components</h2>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Buttons</h3>
+            <div class="fl-stack fl-stack-md" style="margin-bottom:32px;">
+                <div class="fl-inline fl-inline-md">
+                    <button class="fl-btn fl-btn-primary">Primary</button>
+                    <button class="fl-btn fl-btn-secondary">Secondary</button>
+                    <button class="fl-btn fl-btn-outline">Outline</button>
+                    <button class="fl-btn fl-btn-ghost">Ghost</button>
+                    <button class="fl-btn fl-btn-danger">Danger</button>
+                </div>
+                <div class="fl-inline fl-inline-md">
+                    <button class="fl-btn fl-btn-primary fl-btn-sm">Small</button>
+                    <button class="fl-btn fl-btn-primary">Default</button>
+                    <button class="fl-btn fl-btn-primary fl-btn-lg">Large</button>
+                    <button class="fl-btn fl-btn-primary fl-btn-xl">Extra Large</button>
+                </div>
+                <div class="fl-inline fl-inline-md">
+                    <button class="fl-btn fl-btn-primary fl-btn-loading"><span class="fl-btn-text">Loading</span></button>
+                    <button class="fl-btn fl-btn-primary" disabled>Disabled</button>
+                    <button class="fl-btn fl-btn-success">Success</button>
+                    <button class="fl-btn fl-btn-warning">Warning</button>
+                    <button class="fl-btn fl-btn-info">Info</button>
+                </div>
+                <div class="fl-inline fl-inline-md">
+                    <button class="fl-btn fl-btn-circle fl-btn-primary">+</button>
+                    <button class="fl-btn fl-btn-square fl-btn-outline">A</button>
+                    <button class="fl-fab fl-fab-sm">+</button>
+                    <button class="fl-fab">+</button>
+                    <button class="fl-fab fl-fab-lg">+</button>
+                </div>
+            </div>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Forms</h3>
+            <div class="fl-grid fl-grid-cols-2 fl-gap-4" style="margin-bottom:32px;">
+                <div class="fl-form-group">
+                    <label class="fl-form-label fl-form-label-required">Email</label>
+                    <input type="email" class="fl-input" placeholder="you@example.com">
+                </div>
+                <div class="fl-form-group">
+                    <label class="fl-form-label">Password</label>
+                    <input type="password" class="fl-input" placeholder="Enter password">
+                </div>
+                <div class="fl-form-group">
+                    <label class="fl-form-label">Country</label>
+                    <select class="fl-select">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                    </select>
+                </div>
+                <div class="fl-form-group">
+                    <label class="fl-form-label">Message</label>
+                    <textarea class="fl-textarea" rows="2" placeholder="Your message..."></textarea>
+                </div>
+                <div class="fl-form-group">
+                    <label class="fl-checkbox">
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <div class="fl-form-group">
+                    <label class="fl-toggle">
+                        <input type="checkbox" checked>
+                        <span class="fl-toggle-track"></span>
+                        Notifications
+                    </label>
+                </div>
+            </div>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Cards</h3>
+            <div class="demo-grid">
+                <div class="fl-card">
+                    <div class="fl-card-header">
+                        <span class="fl-card-title">Default Card</span>
+                    </div>
+                    <div class="fl-card-body">
+                        <p class="fl-body-sm">Clean, minimal card with header and body sections.</p>
+                    </div>
+                </div>
+                <div class="fl-card fl-card-interactive">
+                    <div class="fl-card-body">
+                        <p class="fl-body-sm"><strong>Interactive Card</strong> — Hover me!</p>
+                    </div>
+                </div>
+                <div class="fl-card fl-card-elevated">
+                    <div class="fl-card-body">
+                        <p class="fl-body-sm"><strong>Elevated Card</strong> with deeper shadow.</p>
+                    </div>
+                </div>
+                <div class="fl-card fl-card-primary">
+                    <div class="fl-card-body">
+                        <p class="fl-body-sm"><strong>Primary Card</strong> with accent gradient.</p>
+                    </div>
+                </div>
+                <div class="fl-stat-card">
+                    <div class="fl-stat-card-icon primary">$</div>
+                    <div class="fl-stat-card-content">
+                        <div class="fl-stat-card-label">Revenue</div>
+                        <div class="fl-stat-card-value">$48,294</div>
+                        <div class="fl-stat-card-change positive">+12.5%</div>
+                    </div>
+                </div>
+                <div class="fl-kpi-card">
+                    <div class="fl-kpi-label">Total Users</div>
+                    <div class="fl-kpi-value">128,430</div>
+                    <div class="fl-kpi-context">+2,340 this week</div>
+                </div>
+            </div>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Badges & Tags</h3>
+            <div class="fl-inline fl-inline-md" style="margin-bottom:32px;">
+                <span class="fl-badge fl-badge-primary">Primary</span>
+                <span class="fl-badge fl-badge-success">Success</span>
+                <span class="fl-badge fl-badge-warning">Warning</span>
+                <span class="fl-badge fl-badge-danger">Danger</span>
+                <span class="fl-badge fl-badge-info">Info</span>
+                <span class="fl-badge fl-badge-outline fl-badge-primary">Outline</span>
+                <span class="fl-tag fl-tag-primary">Tag</span>
+                <span class="fl-tag fl-tag-success">Success</span>
+                <span class="fl-chip fl-chip-primary">Chip</span>
+            </div>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Alerts</h3>
+            <div class="fl-stack fl-stack-md" style="margin-bottom:32px;">
+                <div class="fl-alert fl-alert-info">
+                    <span class="fl-alert-icon">i</span>
+                    <div class="fl-alert-content">
+                        <div class="fl-alert-title">Information</div>
+                        <div class="fl-alert-description">This is an info alert message.</div>
+                    </div>
+                </div>
+                <div class="fl-alert fl-alert-success">
+                    <span class="fl-alert-icon">$</span>
+                    <div class="fl-alert-content">
+                        <div class="fl-alert-title">Success</div>
+                        <div class="fl-alert-description">Operation completed successfully.</div>
+                    </div>
+                </div>
+                <div class="fl-alert fl-alert-warning">
+                    <span class="fl-alert-icon">!</span>
+                    <div class="fl-alert-content">
+                        <div class="fl-alert-title">Warning</div>
+                        <div class="fl-alert-description">Please review this carefully.</div>
+                    </div>
+                </div>
+                <div class="fl-alert fl-alert-danger">
+                    <span class="fl-alert-icon">X</span>
+                    <div class="fl-alert-content">
+                        <div class="fl-alert-title">Error</div>
+                        <div class="fl-alert-description">Something went wrong.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Progress & Spinners</h3>
+            <div class="fl-stack fl-stack-md" style="margin-bottom:32px;">
+                <div class="fl-progress"><div class="fl-progress-bar" style="width:75%;"></div></div>
+                <div class="fl-progress"><div class="fl-progress-bar fl-progress-bar-success fl-progress-bar-striped fl-progress-bar-animated" style="width:50%;"></div></div>
+                <div class="fl-inline fl-inline-md">
+                    <div class="fl-spinner"></div>
+                    <div class="fl-spinner fl-spinner-success"></div>
+                    <div class="fl-spinner fl-spinner-lg"></div>
+                    <div class="fl-spinner-dots"><div class="fl-spinner-dot"></div><div class="fl-spinner-dot"></div><div class="fl-spinner-dot"></div></div>
+                </div>
+                <div class="fl-skeleton-card">
+                    <div class="fl-skeleton-header">
+                        <div class="fl-skeleton fl-skeleton-avatar"></div>
+                        <div class="fl-skeleton-lines" style="flex:1;">
+                            <div class="fl-skeleton fl-skeleton-text"></div>
+                            <div class="fl-skeleton fl-skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div class="fl-skeleton fl-skeleton-image"></div>
+                </div>
+            </div>
+
+            <h3 class="fl-h4" style="margin-bottom:12px;">Navigation</h3>
+            <div class="fl-stack fl-stack-md" style="margin-bottom:32px;">
+                <div class="fl-breadcrumb">
+                    <span class="fl-breadcrumb-item"><a href="#" class="fl-breadcrumb-link">Home</a></span>
+                    <span class="fl-breadcrumb-item"><a href="#" class="fl-breadcrumb-link">Components</a></span>
+                    <span class="fl-breadcrumb-item"><span class="fl-breadcrumb-current">Buttons</span></span>
+                </div>
+                <div class="fl-pagination">
+                    <span class="fl-pagination-item">Prev</span>
+                    <span class="fl-pagination-item active">1</span>
+                    <span class="fl-pagination-item">2</span>
+                    <span class="fl-pagination-item">3</span>
+                    <span class="fl-pagination-ellipsis">...</span>
+                    <span class="fl-pagination-item">12</span>
+                    <span class="fl-pagination-item">Next</span>
+                </div>
+                <div class="fl-tabs">
+                    <button class="fl-tab active">Overview</button>
+                    <button class="fl-tab">Analytics</button>
+                    <button class="fl-tab">Reports <span class="fl-badge fl-badge-primary">3</span></button>
+                    <button class="fl-tab">Settings</button>
+                </div>
+                <div class="fl-tabs fl-tabs-pill">
+                    <button class="fl-tab active">Daily</button>
+                    <button class="fl-tab">Weekly</button>
+                    <button class="fl-tab">Monthly</button>
+                </div>
+                <div class="fl-steps">
+                    <div class="fl-step completed">
+                        <div class="fl-step-marker">$</div>
+                        <span class="fl-step-label">Order Placed</span>
+                    </div>
+                    <div class="fl-step active">
+                        <div class="fl-step-marker">2</div>
+                        <span class="fl-step-label">Processing</span>
+                    </div>
+                    <div class="fl-step">
+                        <div class="fl-step-marker">3</div>
+                        <span class="fl-step-label">Shipped</span>
+                    </div>
+                    <div class="fl-step">
+                        <div class="fl-step-marker">4</div>
+                        <span class="fl-step-label">Delivered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="fl-divider">
+
+        <div class="demo-section" id="themes">
+            <h2 class="fl-h2" style="text-align:center;margin-bottom:32px;">Color Palette</h2>
+            <div class="fl-stack fl-stack-md">
+                <div>
+                    <span class="fl-label">Primary</span>
+                    <div class="color-grid">
+                        <div><div class="color-swatch fl-bg-primary-50"></div><span class="fl-caption">50</span></div>
+                        <div><div class="color-swatch fl-bg-primary-100"></div><span class="fl-caption">100</span></div>
+                        <div><div class="color-swatch fl-bg-primary-200"></div><span class="fl-caption">200</span></div>
+                        <div><div class="color-swatch fl-bg-primary-300"></div><span class="fl-caption">300</span></div>
+                        <div><div class="color-swatch fl-bg-primary-400"></div><span class="fl-caption">400</span></div>
+                        <div><div class="color-swatch fl-bg-primary-500"></div><span class="fl-caption">500</span></div>
+                        <div><div class="color-swatch fl-bg-primary-600"></div><span class="fl-caption">600</span></div>
+                        <div><div class="color-swatch fl-bg-primary-700"></div><span class="fl-caption">700</span></div>
+                        <div><div class="color-swatch fl-bg-primary-800"></div><span class="fl-caption">800</span></div>
+                        <div><div class="color-swatch fl-bg-primary-900"></div><span class="fl-caption">900</span></div>
+                    </div>
+                </div>
+                <div>
+                    <span class="fl-label">Gray</span>
+                    <div class="color-grid">
+                        <div><div class="color-swatch fl-bg-gray-0"></div><span class="fl-caption">0</span></div>
+                        <div><div class="color-swatch fl-bg-gray-50"></div><span class="fl-caption">50</span></div>
+                        <div><div class="color-swatch fl-bg-gray-100"></div><span class="fl-caption">100</span></div>
+                        <div><div class="color-swatch fl-bg-gray-200"></div><span class="fl-caption">200</span></div>
+                        <div><div class="color-swatch fl-bg-gray-300"></div><span class="fl-caption">300</span></div>
+                        <div><div class="color-swatch fl-bg-gray-400"></div><span class="fl-caption">400</span></div>
+                        <div><div class="color-swatch fl-bg-gray-500"></div><span class="fl-caption">500</span></div>
+                        <div><div class="color-swatch fl-bg-gray-600"></div><span class="fl-caption">600</span></div>
+                        <div><div class="color-swatch fl-bg-gray-700"></div><span class="fl-caption">700</span></div>
+                        <div><div class="color-swatch fl-bg-gray-800"></div><span class="fl-caption">800</span></div>
+                    </div>
+                </div>
+                <div>
+                    <span class="fl-label">Semantic</span>
+                    <div class="fl-inline fl-inline-md">
+                        <div><div class="color-swatch fl-bg-success-500" style="width:80px;"></div><span class="fl-caption">Success</span></div>
+                        <div><div class="color-swatch fl-bg-warning-500" style="width:80px;"></div><span class="fl-caption">Warning</span></div>
+                        <div><div class="color-swatch fl-bg-danger-500" style="width:80px;"></div><span class="fl-caption">Danger</span></div>
+                        <div><div class="color-swatch fl-bg-info-500" style="width:80px;"></div><span class="fl-caption">Info</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="fl-divider">
+
+        <div class="demo-section" style="text-align:center;padding:60px 0;">
+            <h2 class="fl-h2">Ready to Build?</h2>
+            <p class="fl-body" style="max-width:500px;margin:12px auto;color:var(--fl-brand-text-secondary);">
+                FlamoUI is production-ready. 120+ components, 200+ utilities, light and dark themes, zero dependencies.
+            </p>
+            <div class="fl-inline fl-justify-center" style="margin-top:20px;">
+                <button class="fl-btn fl-btn-primary fl-btn-lg">View on GitHub</button>
+                <button class="fl-btn fl-btn-outline fl-btn-lg">Documentation</button>
+            </div>
+            <p class="fl-caption" style="margin-top:24px;">Powered by <strong>FlamicsLLC</strong></p>
+        </div>
+    </main>
+
+    <footer style="text-align:center;padding:40px 0;border-top:1px solid var(--fl-gray-200);">
+        <p class="fl-caption">FlamoUI v1.0 — Built by spideythedev for FlamicsLLC</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-fl-theme');
+            html.setAttribute('data-fl-theme', current === 'dark' ? 'light' : 'dark');
+        }
+    </script>
+</body>
+</html>

@@ -494,8 +494,8 @@
   --fl-datatable-striped-bg: #fafaf9;
   --fl-datatable-hover-bg: #f5f5f4;
   --fl-datatable-selected-bg: rgba(255, 87, 34, 0.06);
-}
-:root {
+
+
   --fl-primary-50: #fff7ed;
   --fl-primary-100: #ffedd5;
   --fl-primary-200: #fed7aa;

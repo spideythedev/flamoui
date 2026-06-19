@@ -1,0 +1,390 @@
+.fl-card {
+  background: var(--fl-brand-surface);
+  border: 1px solid var(--fl-card-border);
+  border-radius: var(--fl-card-radius);
+  padding: var(--fl-card-padding);
+  box-shadow: var(--fl-card-shadow);
+  transition: all var(--fl-transition-base);
+}
+
+.fl-card:hover {
+  box-shadow: var(--fl-shadow-md);
+}
+
+.fl-card-interactive {
+  cursor: pointer;
+}
+
+.fl-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--fl-shadow-lg);
+  border-color: var(--fl-primary-300);
+}
+
+.fl-card-interactive:active {
+  transform: translateY(0);
+}
+
+.fl-card-flush {
+  padding: 0;
+}
+
+.fl-card-compact {
+  padding: var(--fl-space-3);
+}
+
+.fl-card-relaxed {
+  padding: var(--fl-space-8);
+}
+
+.fl-card-elevated {
+  box-shadow: var(--fl-shadow-lg);
+  border-color: transparent;
+}
+
+.fl-card-elevated:hover {
+  box-shadow: var(--fl-shadow-xl);
+}
+
+.fl-card-outlined {
+  box-shadow: none;
+  border: 2px solid var(--fl-gray-200);
+}
+
+.fl-card-outlined:hover {
+  border-color: var(--fl-primary-500);
+}
+
+.fl-card-primary {
+  border-color: var(--fl-primary-200);
+  background: linear-gradient(135deg, var(--fl-primary-50), var(--fl-brand-surface));
+}
+
+.fl-card-secondary {
+  border-color: var(--fl-gray-300);
+  background: var(--fl-gray-50);
+}
+
+.fl-card-success {
+  border-color: var(--fl-success-200);
+  background: linear-gradient(135deg, var(--fl-success-50), var(--fl-brand-surface));
+}
+
+.fl-card-warning {
+  border-color: var(--fl-warning-200);
+  background: linear-gradient(135deg, var(--fl-warning-50), var(--fl-brand-surface));
+}
+
+.fl-card-danger {
+  border-color: var(--fl-danger-200);
+  background: linear-gradient(135deg, var(--fl-danger-50), var(--fl-brand-surface));
+}
+
+.fl-card-info {
+  border-color: var(--fl-info-200);
+  background: linear-gradient(135deg, var(--fl-info-50), var(--fl-brand-surface));
+}
+
+.fl-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--fl-space-4);
+  margin-bottom: var(--fl-space-4);
+  border-bottom: 1px solid var(--fl-gray-100);
+}
+
+.fl-card-header .fl-card-title {
+  font-size: var(--fl-text-lg);
+  font-weight: var(--fl-font-weight-semibold);
+  color: var(--fl-brand-text);
+}
+
+.fl-card-header .fl-card-subtitle {
+  font-size: var(--fl-text-sm);
+  color: var(--fl-brand-text-secondary);
+  margin-top: var(--fl-space-1);
+}
+
+.fl-card-body {
+  color: var(--fl-brand-text);
+}
+
+.fl-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--fl-space-4);
+  margin-top: var(--fl-space-4);
+  border-top: 1px solid var(--fl-gray-100);
+}
+
+.fl-card-image {
+  margin: calc(-1 * var(--fl-card-padding));
+  margin-bottom: var(--fl-card-padding);
+  border-radius: var(--fl-card-radius) var(--fl-card-radius) 0 0;
+  overflow: hidden;
+}
+
+.fl-card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--fl-transition-slow);
+}
+
+.fl-card:hover .fl-card-image img {
+  transform: scale(1.03);
+}
+
+.fl-card-image-top {
+  margin: calc(-1 * var(--fl-card-padding));
+  margin-bottom: var(--fl-card-padding);
+  border-radius: var(--fl-card-radius) var(--fl-card-radius) 0 0;
+  overflow: hidden;
+}
+
+.fl-card-image-bottom {
+  margin: var(--fl-card-padding);
+  margin-top: var(--fl-card-padding);
+  margin-bottom: calc(-1 * var(--fl-card-padding));
+  border-radius: 0 0 var(--fl-card-radius) var(--fl-card-radius);
+  overflow: hidden;
+}
+
+.fl-card-avatar {
+  display: flex;
+  align-items: center;
+  gap: var(--fl-space-3);
+  margin-bottom: var(--fl-space-3);
+}
+
+.fl-card-avatar .fl-avatar {
+  width: var(--fl-avatar-lg);
+  height: var(--fl-avatar-lg);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.fl-card-avatar .fl-card-avatar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.fl-card-avatar .fl-card-avatar-name {
+  font-weight: var(--fl-font-weight-semibold);
+  font-size: var(--fl-text-sm);
+}
+
+.fl-card-avatar .fl-card-avatar-role {
+  font-size: var(--fl-text-xs);
+  color: var(--fl-brand-text-muted);
+}
+
+.fl-card-horizontal {
+  display: flex;
+  gap: var(--fl-space-4);
+  padding: 0;
+}
+
+.fl-card-horizontal .fl-card-image {
+  width: 200px;
+  flex-shrink: 0;
+  margin: 0;
+  border-radius: var(--fl-card-radius) 0 0 var(--fl-card-radius);
+}
+
+.fl-card-horizontal .fl-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fl-card-horizontal .fl-card-content {
+  flex: 1;
+  padding: var(--fl-card-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fl-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--fl-space-4);
+}
+
+.fl-card-grid-sm {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.fl-card-grid-lg {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
+.fl-card-masonry {
+  column-count: 3;
+  column-gap: var(--fl-space-4);
+}
+
+.fl-card-masonry .fl-card {
+  break-inside: avoid;
+  margin-bottom: var(--fl-space-4);
+}
+
+@media (max-width: 768px) {
+  .fl-card-horizontal {
+    flex-direction: column;
+  }
+
+  .fl-card-horizontal .fl-card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: var(--fl-card-radius) var(--fl-card-radius) 0 0;
+  }
+
+  .fl-card-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .fl-card-masonry {
+    column-count: 1;
+  }
+
+  .fl-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fl-stat-card {
+  background: var(--fl-brand-surface);
+  border: 1px solid var(--fl-card-border);
+  border-radius: var(--fl-card-radius);
+  padding: var(--fl-space-5);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--fl-space-4);
+  box-shadow: var(--fl-card-shadow);
+  transition: all var(--fl-transition-base);
+}
+
+.fl-stat-card:hover {
+  box-shadow: var(--fl-shadow-md);
+}
+
+.fl-stat-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--fl-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.fl-stat-card-icon.primary {
+  background: var(--fl-primary-50);
+  color: var(--fl-primary-500);
+}
+
+.fl-stat-card-icon.success {
+  background: var(--fl-success-50);
+  color: var(--fl-success-500);
+}
+
+.fl-stat-card-icon.warning {
+  background: var(--fl-warning-50);
+  color: var(--fl-warning-500);
+}
+
+.fl-stat-card-icon.danger {
+  background: var(--fl-danger-50);
+  color: var(--fl-danger-500);
+}
+
+.fl-stat-card-icon.info {
+  background: var(--fl-info-50);
+  color: var(--fl-info-500);
+}
+
+.fl-stat-card-content {
+  flex: 1;
+}
+
+.fl-stat-card-label {
+  font-size: var(--fl-text-xs);
+  font-weight: var(--fl-font-weight-medium);
+  color: var(--fl-brand-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--fl-letter-spacing-wide);
+  margin-bottom: var(--fl-space-1);
+}
+
+.fl-stat-card-value {
+  font-size: var(--fl-text-3xl);
+  font-weight: var(--fl-font-weight-bold);
+  color: var(--fl-brand-text);
+  line-height: 1;
+}
+
+.fl-stat-card-change {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--fl-space-1);
+  font-size: var(--fl-text-xs);
+  font-weight: var(--fl-font-weight-semibold);
+  margin-top: var(--fl-space-1);
+}
+
+.fl-stat-card-change.positive {
+  color: var(--fl-success-500);
+}
+
+.fl-stat-card-change.negative {
+  color: var(--fl-danger-500);
+}
+
+.fl-stat-card-sparkline {
+  margin-top: var(--fl-space-2);
+  height: 40px;
+}
+
+.fl-kpi-card {
+  background: var(--fl-brand-gradient);
+  color: #ffffff;
+  border-radius: var(--fl-card-radius);
+  padding: var(--fl-space-6);
+  box-shadow: var(--fl-shadow-glow-primary);
+}
+
+.fl-kpi-card .fl-kpi-label {
+  font-size: var(--fl-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--fl-letter-spacing-wider);
+  opacity: 0.8;
+  margin-bottom: var(--fl-space-2);
+}
+
+.fl-kpi-card .fl-kpi-value {
+  font-size: var(--fl-text-5xl);
+  font-weight: var(--fl-font-weight-extrabold);
+  line-height: 1;
+  margin-bottom: var(--fl-space-1);
+}
+
+.fl-kpi-card .fl-kpi-context {
+  font-size: var(--fl-text-sm);
+  opacity: 0.8;
+}
+
+.fl-kpi-card .fl-kpi-icon {
+  position: absolute;
+  top: var(--fl-space-4);
+  right: var(--fl-space-4);
+  font-size: 48px;
+  opacity: 0.2;
+}

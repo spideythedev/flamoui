@@ -1,0 +1,374 @@
+:root {
+  --fl-primary-50: #fff7ed;
+  --fl-primary-100: #ffedd5;
+  --fl-primary-200: #fed7aa;
+  --fl-primary-300: #fdba74;
+  --fl-primary-400: #fb923c;
+  --fl-primary-500: #ff5722;
+  --fl-primary-600: #ea580c;
+  --fl-primary-700: #c2410c;
+  --fl-primary-800: #9a3412;
+  --fl-primary-900: #7c2d12;
+  --fl-primary-950: #431407;
+
+  --fl-secondary-50: #fffbeb;
+  --fl-secondary-100: #fef3c7;
+  --fl-secondary-200: #fde68a;
+  --fl-secondary-300: #fcd34d;
+  --fl-secondary-400: #fbbf24;
+  --fl-secondary-500: #ff9800;
+  --fl-secondary-600: #ea8c00;
+  --fl-secondary-700: #c27100;
+  --fl-secondary-800: #9a5a00;
+  --fl-secondary-900: #7a4700;
+  --fl-secondary-950: #472a00;
+
+  --fl-gray-0: #ffffff;
+  --fl-gray-50: #fafaf9;
+  --fl-gray-100: #f5f5f4;
+  --fl-gray-200: #e7e5e4;
+  --fl-gray-300: #d6d3d1;
+  --fl-gray-400: #a8a29e;
+  --fl-gray-500: #78716c;
+  --fl-gray-600: #57534e;
+  --fl-gray-700: #44403c;
+  --fl-gray-800: #292524;
+  --fl-gray-900: #1c1917;
+  --fl-gray-950: #0c0a09;
+  --fl-gray-1000: #000000;
+
+  --fl-success-50: #f0fdf4;
+  --fl-success-100: #dcfce7;
+  --fl-success-200: #bbf7d0;
+  --fl-success-300: #86efac;
+  --fl-success-400: #4ade80;
+  --fl-success-500: #22c55e;
+  --fl-success-600: #16a34a;
+  --fl-success-700: #15803d;
+  --fl-success-800: #166534;
+  --fl-success-900: #14532d;
+
+  --fl-warning-50: #fffbeb;
+  --fl-warning-100: #fef3c7;
+  --fl-warning-200: #fde68a;
+  --fl-warning-300: #fcd34d;
+  --fl-warning-400: #fbbf24;
+  --fl-warning-500: #f59e0b;
+  --fl-warning-600: #d97706;
+  --fl-warning-700: #b45309;
+  --fl-warning-800: #92400e;
+  --fl-warning-900: #78350f;
+
+  --fl-danger-50: #fef2f2;
+  --fl-danger-100: #fee2e2;
+  --fl-danger-200: #fecaca;
+  --fl-danger-300: #fca5a5;
+  --fl-danger-400: #f87171;
+  --fl-danger-500: #ef4444;
+  --fl-danger-600: #dc2626;
+  --fl-danger-700: #b91c1c;
+  --fl-danger-800: #991b1b;
+  --fl-danger-900: #7f1d1d;
+
+  --fl-info-50: #eff6ff;
+  --fl-info-100: #dbeafe;
+  --fl-info-200: #bfdbfe;
+  --fl-info-300: #93c5fd;
+  --fl-info-400: #60a5fa;
+  --fl-info-500: #3b82f6;
+  --fl-info-600: #2563eb;
+  --fl-info-700: #1d4ed8;
+  --fl-info-800: #1e40af;
+  --fl-info-900: #1e3a8a;
+
+  --fl-teal-50: #f0fdfa;
+  --fl-teal-100: #ccfbf1;
+  --fl-teal-200: #99f6e4;
+  --fl-teal-300: #5eead4;
+  --fl-teal-400: #2dd4bf;
+  --fl-teal-500: #14b8a6;
+  --fl-teal-600: #0d9488;
+  --fl-teal-700: #0f766e;
+  --fl-teal-800: #115e59;
+  --fl-teal-900: #134e4a;
+
+  --fl-purple-50: #faf5ff;
+  --fl-purple-100: #f3e8ff;
+  --fl-purple-200: #e9d5ff;
+  --fl-purple-300: #d8b4fe;
+  --fl-purple-400: #c084fc;
+  --fl-purple-500: #a855f7;
+  --fl-purple-600: #9333ea;
+  --fl-purple-700: #7e22ce;
+  --fl-purple-800: #6b21a8;
+  --fl-purple-900: #581c87;
+
+  --fl-pink-50: #fdf2f8;
+  --fl-pink-100: #fce7f3;
+  --fl-pink-200: #fbcfe8;
+  --fl-pink-300: #f9a8d4;
+  --fl-pink-400: #f472b6;
+  --fl-pink-500: #ec4899;
+  --fl-pink-600: #db2777;
+  --fl-pink-700: #be185d;
+  --fl-pink-800: #9d174d;
+  --fl-pink-900: #831843;
+
+  --fl-brand-bg: #fafaf9;
+  --fl-brand-surface: #ffffff;
+  --fl-brand-border: #e7e5e4;
+  --fl-brand-text: #1c1917;
+  --fl-brand-text-secondary: #78716c;
+  --fl-brand-text-muted: #a8a29e;
+  --fl-brand-accent: #ff5722;
+  --fl-brand-gradient: linear-gradient(135deg, #ff5722, #ff9800);
+  --fl-brand-gradient-hover: linear-gradient(135deg, #ff7043, #ffa726);
+  --fl-brand-gradient-vertical: linear-gradient(180deg, #ff5722, #ff9800);
+
+  --fl-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --fl-font-serif: 'Georgia', 'Times New Roman', Times, serif;
+  --fl-font-mono: 'SF Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', Consolas, monospace;
+  --fl-font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fl-text-xs: 0.75rem;
+  --fl-text-sm: 0.875rem;
+  --fl-text-base: 1rem;
+  --fl-text-lg: 1.125rem;
+  --fl-text-xl: 1.25rem;
+  --fl-text-2xl: 1.5rem;
+  --fl-text-3xl: 1.875rem;
+  --fl-text-4xl: 2.25rem;
+  --fl-text-5xl: 3rem;
+  --fl-text-6xl: 3.75rem;
+  --fl-text-7xl: 4.5rem;
+  --fl-text-8xl: 6rem;
+  --fl-text-9xl: 8rem;
+
+  --fl-font-weight-thin: 100;
+  --fl-font-weight-extralight: 200;
+  --fl-font-weight-light: 300;
+  --fl-font-weight-normal: 400;
+  --fl-font-weight-medium: 500;
+  --fl-font-weight-semibold: 600;
+  --fl-font-weight-bold: 700;
+  --fl-font-weight-extrabold: 800;
+  --fl-font-weight-black: 900;
+
+  --fl-line-height-none: 1;
+  --fl-line-height-tight: 1.25;
+  --fl-line-height-snug: 1.375;
+  --fl-line-height-normal: 1.5;
+  --fl-line-height-relaxed: 1.625;
+  --fl-line-height-loose: 2;
+
+  --fl-letter-spacing-tighter: -0.05em;
+  --fl-letter-spacing-tight: -0.025em;
+  --fl-letter-spacing-normal: 0;
+  --fl-letter-spacing-wide: 0.025em;
+  --fl-letter-spacing-wider: 0.05em;
+  --fl-letter-spacing-widest: 0.1em;
+
+  --fl-space-0: 0;
+  --fl-space-px: 1px;
+  --fl-space-0-5: 0.125rem;
+  --fl-space-1: 0.25rem;
+  --fl-space-1-5: 0.375rem;
+  --fl-space-2: 0.5rem;
+  --fl-space-2-5: 0.625rem;
+  --fl-space-3: 0.75rem;
+  --fl-space-3-5: 0.875rem;
+  --fl-space-4: 1rem;
+  --fl-space-5: 1.25rem;
+  --fl-space-6: 1.5rem;
+  --fl-space-7: 1.75rem;
+  --fl-space-8: 2rem;
+  --fl-space-9: 2.25rem;
+  --fl-space-10: 2.5rem;
+  --fl-space-11: 2.75rem;
+  --fl-space-12: 3rem;
+  --fl-space-14: 3.5rem;
+  --fl-space-16: 4rem;
+  --fl-space-20: 5rem;
+  --fl-space-24: 6rem;
+  --fl-space-28: 7rem;
+  --fl-space-32: 8rem;
+  --fl-space-36: 9rem;
+  --fl-space-40: 10rem;
+  --fl-space-44: 11rem;
+  --fl-space-48: 12rem;
+  --fl-space-52: 13rem;
+  --fl-space-56: 14rem;
+  --fl-space-60: 15rem;
+  --fl-space-64: 16rem;
+  --fl-space-72: 18rem;
+  --fl-space-80: 20rem;
+  --fl-space-96: 24rem;
+  --fl-space-128: 32rem;
+
+  --fl-radius-none: 0;
+  --fl-radius-xs: 2px;
+  --fl-radius-sm: 4px;
+  --fl-radius-md: 6px;
+  --fl-radius-lg: 8px;
+  --fl-radius-xl: 12px;
+  --fl-radius-2xl: 16px;
+  --fl-radius-3xl: 20px;
+  --fl-radius-4xl: 24px;
+  --fl-radius-full: 9999px;
+
+  --fl-shadow-none: none;
+  --fl-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --fl-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --fl-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --fl-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.04);
+  --fl-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.08), 0 8px 10px rgba(0, 0, 0, 0.04);
+  --fl-shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.12);
+  --fl-shadow-3xl: 0 35px 60px rgba(0, 0, 0, 0.16);
+  --fl-shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+  --fl-shadow-glow-primary: 0 0 20px rgba(255, 87, 34, 0.3);
+  --fl-shadow-glow-secondary: 0 0 20px rgba(255, 152, 0, 0.3);
+  --fl-shadow-glow-success: 0 0 20px rgba(34, 197, 94, 0.3);
+  --fl-shadow-glow-danger: 0 0 20px rgba(239, 68, 68, 0.3);
+  --fl-shadow-glow-info: 0 0 20px rgba(59, 130, 246, 0.3);
+
+  --fl-border-width-none: 0;
+  --fl-border-width-thin: 1px;
+  --fl-border-width-md: 2px;
+  --fl-border-width-lg: 4px;
+  --fl-border-width-xl: 8px;
+
+  --fl-border-style-solid: solid;
+  --fl-border-style-dashed: dashed;
+  --fl-border-style-dotted: dotted;
+  --fl-border-style-double: double;
+  --fl-border-style-none: none;
+
+  --fl-transition-fast: 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  --fl-transition-base: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --fl-transition-slow: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --fl-transition-spring: 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --fl-transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --fl-transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --fl-duration-75: 75ms;
+  --fl-duration-100: 100ms;
+  --fl-duration-150: 150ms;
+  --fl-duration-200: 200ms;
+  --fl-duration-300: 300ms;
+  --fl-duration-500: 500ms;
+  --fl-duration-700: 700ms;
+  --fl-duration-1000: 1000ms;
+
+  --fl-ease-linear: cubic-bezier(0, 0, 1, 1);
+  --fl-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --fl-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --fl-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --fl-z-0: 0;
+  --fl-z-10: 10;
+  --fl-z-20: 20;
+  --fl-z-30: 30;
+  --fl-z-40: 40;
+  --fl-z-50: 50;
+  --fl-z-auto: auto;
+  --fl-z-dropdown: 100;
+  --fl-z-sticky: 200;
+  --fl-z-fixed: 300;
+  --fl-z-modal-backdrop: 400;
+  --fl-z-modal: 500;
+  --fl-z-popover: 600;
+  --fl-z-tooltip: 700;
+  --fl-z-toast: 800;
+  --fl-z-max: 9999;
+
+  --fl-breakpoint-xs: 320px;
+  --fl-breakpoint-sm: 480px;
+  --fl-breakpoint-md: 768px;
+  --fl-breakpoint-lg: 1024px;
+  --fl-breakpoint-xl: 1280px;
+  --fl-breakpoint-2xl: 1536px;
+  --fl-breakpoint-3xl: 1920px;
+
+  --fl-container-xs: 100%;
+  --fl-container-sm: 480px;
+  --fl-container-md: 720px;
+  --fl-container-lg: 960px;
+  --fl-container-xl: 1140px;
+  --fl-container-2xl: 1320px;
+  --fl-container-3xl: 1500px;
+
+  --fl-grid-columns: 12;
+  --fl-grid-gap: 1rem;
+
+  --fl-avatar-xs: 24px;
+  --fl-avatar-sm: 32px;
+  --fl-avatar-md: 40px;
+  --fl-avatar-lg: 48px;
+  --fl-avatar-xl: 64px;
+  --fl-avatar-2xl: 80px;
+  --fl-avatar-3xl: 96px;
+
+  --fl-icon-xs: 12px;
+  --fl-icon-sm: 16px;
+  --fl-icon-md: 20px;
+  --fl-icon-lg: 24px;
+  --fl-icon-xl: 32px;
+  --fl-icon-2xl: 40px;
+  --fl-icon-3xl: 48px;
+
+  --fl-opacity-0: 0;
+  --fl-opacity-5: 0.05;
+  --fl-opacity-10: 0.1;
+  --fl-opacity-20: 0.2;
+  --fl-opacity-25: 0.25;
+  --fl-opacity-30: 0.3;
+  --fl-opacity-40: 0.4;
+  --fl-opacity-50: 0.5;
+  --fl-opacity-60: 0.6;
+  --fl-opacity-70: 0.7;
+  --fl-opacity-75: 0.75;
+  --fl-opacity-80: 0.8;
+  --fl-opacity-90: 0.9;
+  --fl-opacity-95: 0.95;
+  --fl-opacity-100: 1;
+
+  --fl-blur-none: 0;
+  --fl-blur-sm: 4px;
+  --fl-blur-md: 8px;
+  --fl-blur-lg: 12px;
+  --fl-blur-xl: 16px;
+  --fl-blur-2xl: 24px;
+  --fl-blur-3xl: 40px;
+
+  --fl-scale-0: 0;
+  --fl-scale-50: 0.5;
+  --fl-scale-75: 0.75;
+  --fl-scale-90: 0.9;
+  --fl-scale-95: 0.95;
+  --fl-scale-100: 1;
+  --fl-scale-105: 1.05;
+  --fl-scale-110: 1.1;
+  --fl-scale-125: 1.25;
+  --fl-scale-150: 1.5;
+
+  --fl-rotate-0: 0deg;
+  --fl-rotate-45: 45deg;
+  --fl-rotate-90: 90deg;
+  --fl-rotate-180: 180deg;
+  --fl-rotate-270: 270deg;
+  --fl-rotate-360: 360deg;
+
+  --fl-translate-0: 0;
+  --fl-translate-1: 0.25rem;
+  --fl-translate-2: 0.5rem;
+  --fl-translate-3: 0.75rem;
+  --fl-translate-4: 1rem;
+  --fl-translate-6: 1.5rem;
+  --fl-translate-8: 2rem;
+  --fl-translate-10: 2.5rem;
+  --fl-translate-12: 3rem;
+  --fl-translate-16: 4rem;
+  --fl-translate-20: 5rem;
+  --fl-translate-24: 6rem;
+  --fl-translate-full: 100%;
+}

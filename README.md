@@ -1,5 +1,7 @@
 # FlamoUI
 
+<img src="./flamoui.png" width="100%" height="50%"></img>
+
 > Enterprise CSS Framework — Built for scale. Designed for power.
 
 **120+ components · 200+ utilities · 10,000+ lines · Zero dependencies**

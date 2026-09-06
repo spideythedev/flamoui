@@ -4,7 +4,7 @@
 
 > Enterprise CSS Framework - Built for scale. Designed for power.
 
-**120+ components · 200+ utilities · 10,000+ lines · Zero dependencies **
+**120+ components · 200+ utilities · 10,000+ lines · Zero dependencies**
 
 ---
 
